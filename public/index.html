@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/style.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script defer async src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script defer async src="../src/index.js"></script>
 </head>
 <body>
-    <script src="../src/index.js"></script>
+  <div class="container my-2">
+      <h1>Dashboard</h1>
+      <div class="progress my-1">
+        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress my-1">
+        <div class="progress-bar bg-danger" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+  </div>
+  <hr class="divider">
+  <div class="container-fluid">
+    <div class="row d-flex flex-nowrap flex-column register">
+      <div class="card text-bg-success m-2 align-self-end" style="max-width: 18rem;">
+        <div class="card-header">Ingreso</div>
+        <div class="card-body">
+          <h5 class="card-title">$183.000,00</h5>
+          <p class="card-text">Sueldo</p>
+        </div>
+      </div>
+      <div class="card text-bg-danger m-2" style="max-width: 18rem;">
+        <div class="card-header">Gasto</div>
+        <div class="card-body">
+          <h5 class="card-title">-$34.000,00</h5>
+          <p class="card-text">Alquiler</p>
+        </div>
+      </div>
+      <div class="card text-bg-success m-2 align-self-end" style="max-width: 18rem;">
+        <div class="card-header">Ingreso</div>
+        <div class="card-body">
+          <h5 class="card-title">$106.000,00</h5>
+          <p class="card-text">Aguinaldo</p>
+        </div>
+      </div>
+      <div class="card text-bg-success m-2 align-self-end" style="max-width: 18rem;">
+        <div class="card-header">Ingreso</div>
+        <div class="card-body">
+          <h5 class="card-title">20.000,00</h5>
+          <p class="card-text">Venta notebook</p>
+        </div>
+      </div>
+      <div class="card text-bg-danger m-2" style="max-width: 18rem;">
+        <div class="card-header">Gasto</div>
+        <div class="card-body">
+          <h5 class="card-title">-$10.000,00</h5>
+          <p class="card-text">Comida para el michi</p>
+        </div>  
+    </div>
+  </div>
+  <hr class="divider">
+  <div class="container input-group mb-3">
+    <span class="input-group-text">$</span>
+    <input type="text" class="form-control" placeholder="Ingrese un valor" aria-label="Recipient's username with two button addons">
+    <input type="text" class="form-control" placeholder="Descripción" aria-label="Server">
+    <button class="btn btn-success" type="button">Ingreso</button>
+    <button class="btn btn-danger" type="button">Gasto</button>
+  </div>
 </body>
 </html>
